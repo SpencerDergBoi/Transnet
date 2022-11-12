@@ -10,70 +10,205 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ht.harlonserver.net">
   <meta name="og:description" content="HarlonTransit is the government-owned public transport operator within the city of Harlon.">
-  <meta property="og:image" content="./img/transit-1.jpg">
+  <meta property="og:image" content="https://ht.harlonserver.net/img/transit-1.jpg">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="favicon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/minstyle.io.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/css/main.css">
+  <link rel="stylesheet" href="./css/hcs.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <div class="ms-menu">
-    <div class="ms-menu-logo">
-        <a href="./index.html"><img src="favicon.ico"/></a>
-    </div>
-    <nav class="ms-menu-link">
-        <input type="checkbox" id="ms-menu-toggle" />
-        <label for="ms-menu-toggle" class="ms-menu-icon"><span class="material-icons">view_headline</span></label>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./map.html">Transport Map</a></li>
-            <li><a href="https://harlontripplanner.muffinbardeyt.repl.co/">Trip Planner</a></li>
-            <li><a href="https://harlonserver.net"><button class="ms-btn ms-secondary">Main Harlon Website</button></a></li>
-            <li><a href="https://dynmap.harlonserver.net"><button class="ms-btn ms-action2">Dynmap</button></a></li>
-        </ul>
-    </nav>
+<nav class="nsw-skip nsw-skip--light" aria-label="Skip to links">
+  <a href="#main-nav"><span>Skip to navigation</span></a>
+  <a href="#"><span>Skip to content</span></a>
+</nav>
+<div class="nsw-masthead nsw-masthead--light">
+  <div class="nsw-container"><strong>IP: play.harlonserver.net (Minecraft 1.17 recommended)</strong></div>
 </div>
+
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner">
+      <div class="nsw-header__main">
+        <div class="nsw-header__waratah">
+          <a href="./index.html">
+            <img src="favicon.ico" width="64px" height="64px"/>
+            <span class="sr-only">HarlonTransit</span>
+          </a>
+        </div>
+        <div class="nsw-header__name">
+          <div class="nsw-header__title">HarlonTransit</div>
+        </div>
+      </div>
+      <div class="nsw-header__menu">
+        <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
+          <span><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+    </div>
+</header>
+<nav class="nsw-main-nav" id="main-nav" aria-label="Main menu">
+  <div class="nsw-main-nav__header">
+    <div class="nsw-main-nav__title">Menu</div>
+    <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-main-nav__list">
+    <li>
+      <a href="./index.html">
+        <span>Home</span>
+      </a>    </li>
+    <li>
+      <a href="./map.html">
+        <span>Transport Map</span>
+      </a>    </li>
+    <li>
+      <a href="https://harlontripplanner.muffinbardeyt.repl.co/" target="_blank" rel="noopener noreferrer">
+        <span>Trip Planner</span>
+      </a>    </li>
+    <li>
+      <a href="https://harlonserver.net" target="_blank" rel="noopener noreferrer">
+        <span>Main Harlon Website</span>
+      </a>    </li>
+    <li>
+      <a href="https://dynmap.harlonserver.net" target="_blank" rel="noopener noreferrer">
+        <span>Dynmap</span>
+      </a>    </li>
+  </ul>
+</nav>
+<div class="nsw-global-alert js-global-alert" role="alert">
+  <div class="nsw-global-alert__wrapper">
+    <div class="nsw-global-alert__content">
+      <div class="nsw-global-alert__title">Service Information</div>
+      <p>All services are currently operating as normal as semi-automatic services, except for Metro Line M31 which is manually driver-operated.</p>
+    </div>
+    <button class="nsw-icon-button js-close-alert" type="button" aria-expanded="true">
+      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+      <span class="sr-only">Close message</span>
+    </button>
+  </div>
+</div>
+
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="ms-hero ms-large ms-center">
-    <div class="ms-hero-background">
-        <img src="./img/transit-1.jpg" alt="Image of an M5 Metro train"/>
-    </div>
-    <div class="ms-hero-body ms-center">
-        <h1 class="ms-hero-title">HarlonTransit</h1>
-        <p class="ms-hero-subtitle">HarlonTransit is the government-owned public transport operator within the city of Harlon.</p>
+  <div class="nsw-hero-banner nsw-hero-banner--dark">
+    <div class="nsw-hero-banner__container">
+      <div class="nsw-hero-banner__wrapper">
+        <div class="nsw-hero-banner__content">
+          <h1>HarlonTransit</h1>
+          <p class="nsw-intro">HarlonTransit is the government-owned public transport operator within the city of Harlon.</p>
+        </div>
+        <div class="nsw-hero-banner__box">
+          <img class="nsw-hero-banner__image" src="./img/transit-1.jpg" alt="Image of an M5 Metro train" />
+        </div>
+      </div>
     </div>
   </div>
 
-  <br>
-  <div class="ms-card ms-inline">
-    <div class="row">
-        <div class="ms-card-pic col-md-4">
-                <img src="./img/slideshow-2.png" alt="Image of an M1 Metro train"/>
+<div class="nsw-m-right-md nsw-m-left-md">
+<div class="nsw-p-top-sm">
+<h1>Quick Links</h1>
+</div>
+  <div class="nsw-grid">
+    <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
+      <div class="nsw-card">
+        <div class="nsw-card__image">
+          <img src="./img/unique.jfif" alt="HarlonTransit bus">
         </div>
-        <div class="col-md-7">
-            <div class="ms-card-title">
-                <h2>We keep you moving.</h2>
-            </div>
-            <div class="ms-card-content">
-                <p>
-                  We operate a city-wide network of trains, buses and ferries to get you where you need to be in a reliable, safe and fast manner.
-                </p>
-            </div>
+        <div class="nsw-card__content">
+          <div class="nsw-card__title">
+            <a href="./map.html">HarlonTransit Map</a>
+          </div>
+          <div class="nsw-card__copy">HarlonTransit's official map is a reliable companion for navigating our network.</div>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
         </div>
+      </div>
     </div>
+    <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
+      <div class="nsw-card">
+        <div class="nsw-card__image">
+          <img src="./img/slideshow-2.png" alt="HarlonTransit Metro train">
+        </div>
+        <div class="nsw-card__content">
+          <div class="nsw-card__title">
+            <a href="https://harlontripplanner.muffinbardeyt.repl.co/" target="_blank" rel="noopener noreferrer">HarlonTransit Trip Planner</a>
+          </div>
+          <div class="nsw-card__copy">Plan your trip from A to B easily with our interactive Trip Planner.</div>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+    </div>
+    <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
+      <div class="nsw-card">
+        <div class="nsw-card__image">
+          <img src="./img/dynmap.png" alt="Screenshot of Harlon City Server's dynmap">
+        </div>
+        <div class="nsw-card__content">
+          <div class="nsw-card__title">
+            <a href="https://dynmap.harlonserver.net" target="_blank" rel="noopener noreferrer">Dynmap</a>
+          </div>
+          <div class="nsw-card__copy">Find stations, landmarks and more on the server and track your location in real time.</div>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h1>Related websites</h1>
+  <div class="nsw-link-list">
+    <ul>
+      <li>
+        <a href="https://harlonserver.net" target="_blank" rel="noopener noreferrer">
+          <span>Main Harlon City Server Website</span>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#">
+          <span>Harlonian National (for all intercity and national rail and coach services)</span>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>Sealand Area Rapid Transit (SART)</span>
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+  <br>
+<script src="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/js/main.min.js"></script>
+<script>window.NSW.initSite()</script>
 </div>
 </body>
 
-<footer class="ms-footer ms-small">
-  <div class="container">
-    <p>&copy; <b>Harlon City Server</b> - <a href="https://discord.gg/qMmk8MuEBz">Discord</a> - <a href="https://youtube.com/channel/UCUsBniuYo4fKNWy-PcAoDNg">YouTube</a> - <a href="https://twitter.com/HarlonServer">Twitter</a> - <a href="https://www.tiktok.com/@harlonserver">TikTok</a> - <a href="https://www.github.com/HarlonServer">GitHub</a></p>
+<footer class="nsw-footer nsw-footer--dark">
+  <div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>HarlonTransit - keeping you moving.</p>
+      <hr>
+      <ul>
+        <li><a href="https://discord.gg/qMmk8MuEBz" target="_blank" rel="noopener noreferrer">Discord</a></li>
+        <li><a href="https://youtube.com/channel/UCUsBniuYo4fKNWy-PcAoDNg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://twitter.com/HarlonServer" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://www.tiktok.com/@harlonserver" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+        <li><a href="https://www.github.com/HarlonServer" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+      <div class="nsw-footer__info">
+        <div class="nsw-footer__copyright">Copyright © Harlon City Server</div>
+        <div class="nsw-footer__built">Based on the <a href="https://github.com/digitalnsw/nsw-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></div>
+      </div>
+    </div>
   </div>
 </footer>
 

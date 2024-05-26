@@ -6,6 +6,7 @@
     --nsw-brand-light: var(--nsw-palette-blue-04);
     --nsw-brand-accent: var(--nsw-palette-red-02);
     --nsw-brand-supplementary: var(--nsw-palette-blue-02);
+    --disruption-banner: #F59B14;
   
     --nsw-text-dark: var(--nsw-palette-grey-01);
     --nsw-text-light: var(--nsw-palette-white);
